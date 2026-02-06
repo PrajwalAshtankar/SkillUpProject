@@ -16,7 +16,63 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body {
+        background-color: #f5f7fa;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .hero-section {
+        background: #0b2545;
+        color: white;
+        padding: 90px 0;
+      }
+
+      .section-title {
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .section-subtitle {
+        color: #6c757d;
+        margin-bottom: 50px;
+      }
+
+      .team-card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px 20px;
+        text-align: center;
+        transition: 0.3s ease;
+        height: 100%;
+      }
+
+      .team-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      }
+
+      .team-img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 4px solid #1d4ed8;
+      }
+
+      .role {
+        font-size: 14px;
+        color: #6c757d;
+      }
+
+      .footer {
+        background: #0b2545;
+        color: white;
+        padding: 20px 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -35,9 +91,7 @@
 
           <li>
             <i class="fa-solid fa-ribbon ms-3"></i>
-            <a href="./team.html" class="text-white text-decoration-none"
-              >Team</a
-            >
+            <a href="#" class="text-white text-decoration-none">Team</a>
           </li>
           <li>
             <i class="fa-solid fa-newspaper ms-3"></i>
@@ -98,159 +152,152 @@
         </div>
       </div>
     </nav>
-    <!--hero section-->
-    <section class="hero-section py-5 shadow-lg">
+    <!-- HERO -->
+    <section class="hero-section text-center">
       <div class="container">
-        <div class="row align-items-center gy-5">
-          <!-- LEFT CONTENT -->
-          <div class="col-12 col-lg-6 text-center text-lg-start">
-            <p class="text-info fw-semibold mb-2">NO DEGREE? NO PROBLEM!</p>
+        <h1 class="fw-bold display-5">Meet Our Expert Team</h1>
+        <p class="mt-3">
+          Professionals dedicated to empowering your learning journey
+        </p>
+      </div>
+    </section>
 
-            <h1 class="fw-bold display-5">
-              Your Career <br />
-              Journey Starts <br />
-              Here
-            </h1>
+    <!-- FACULTY -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Our Faculty</h2>
+          <p class="section-subtitle">
+            Industry experts with real-world experience
+          </p>
+        </div>
 
-            <p class="text-muted mt-3">
-              Our nonprofit reviews careers, training, and jobs so you don’t
-              have to. We help you find the best jobs that don’t require a
-              degree and guide you from start to finish!
-            </p>
-            <a href="./career.html"
-              ><button class="btn btn-info px-4 py-2 mt-3">
-                Explore Careers
-              </button></a
-            >
+        <div class="row g-4">
+          <!-- Teacher 1 -->
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f-4.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Dr. Anjali Sharma</h5>
+              <p class="role">Web Development Expert</p>
+              <p class="small">
+                Specialist in full-stack development and modern frameworks.
+              </p>
+            </div>
           </div>
 
-          <!-- RIGHT IMAGE CARD WITH SLIDER -->
-          <div class="col-12 col-lg-6 d-flex justify-content-center">
-            <div
-              class="hero-card position-relative carousel slide"
-              id="carouselExampleSlidesOnly"
-              data-bs-ride="carousel"
-            >
-              <div
-                id="heroSlider"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <!-- SLIDE 1 -->
-                  <div class="carousel-item active">
-                    <img
-                      src="./imgs/pic1_11zon.webp"
-                      class="img-fluid rounded-4"
-                      alt="Success story 1"
-                    />
-                  </div>
+          <!-- Teacher 2 -->
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f2.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Mr. Raj Verma</h5>
+              <p class="role">Data Science Lead</p>
+              <p class="small">
+                Expert in AI, ML and predictive analytics systems.
+              </p>
+            </div>
+          </div>
 
-                  <!-- SLIDE 2 -->
-                  <div class="carousel-item">
-                    <img
-                      src="./imgs/pic2_11zon.webp"
-                      class="img-fluid rounded-4"
-                      alt="Success story 2"
-                    />
-                  </div>
+          <!-- Teacher 3 -->
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f1.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Mr. Karan Malhotra</h5>
+              <p class="role">Cyber Security Specialist</p>
+              <p class="small">
+                Certified ethical hacker and network security analyst.
+              </p>
+            </div>
+          </div>
 
-                  <!-- SLIDE 3 -->
-                  <div class="carousel-item">
-                    <img
-                      src="./imgs/cloud-engineer.webp"
-                      class="img-fluid rounded-4"
-                      style="object-fit: cover"
-                      alt="Success story 3"
-                    />
-                  </div>
-                </div>
+          <!-- Teacher 4 -->
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f-3.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Ms. Aditi Rao</h5>
+              <p class="role">Cloud Computing Mentor</p>
+              <p class="small">Expert in AWS, Azure and DevOps architecture.</p>
+            </div>
+          </div>
 
-                <!-- PREV / NEXT -->
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#heroSlider"
-                  data-bs-slide="prev"
-                >
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
+          <!-- Teacher 5 -->
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f-5.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Ms. Neha Kapoor</h5>
+              <p class="role">UI/UX Design Mentor</p>
+              <p class="small">
+                Passionate about user-centered design principles.
+              </p>
+            </div>
+          </div>
 
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#heroSlider"
-                  data-bs-slide="next"
-                >
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
+          <!-- Teacher 6 -->
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f-6.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Dr. Meera Iyer</h5>
+              <p class="role">Advanced Analytics Expert</p>
+              <p class="small">
+                Specialist in big data and enterprise analytics.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--section2-->
-    <section class="what-we-do py-5 shadow-lg">
-      <div class="container text-center">
-        <p class="text-info fw-semibold mb-2">WHAT WE DO</p>
-        <h2 class="fw-bold mb-5">
-          Free Career Tools to Support Your Job Search
-        </h2>
 
-        <div class="row g-4 justify-content-center">
-          <!-- Card 1 -->
-          <div class="col-12 col-sm-6 col-lg-2">
-            <div class="feature-card">
-              <div class="icon text-danger">
-                <i class="fa-solid fa-forward"></i>
-              </div>
-              <h5>Step-by-Step Guidance</h5>
-              <a href="#" class="card-link red">Start Career Journey</a>
+    <!-- MANAGEMENT -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Management Team</h2>
+          <p class="section-subtitle">Leadership driving SkillUp forward</p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/j8.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Mr. Arjun Mehta</h5>
+              <p class="role">Founder & CEO</p>
+              <p class="small">
+                Visionary leader committed to accessible education.
+              </p>
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="col-12 col-sm-6 col-lg-2">
-            <div class="feature-card">
-              <div class="icon text-purple">
-                <i class="fa-solid fa-compass"></i>
-              </div>
-              <h5>Non-Degree Career Paths</h5>
-              <a href="#" class="card-link purple">Explore Careers</a>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-12 col-sm-6 col-lg-2">
-            <div class="feature-card">
-              <div class="icon text-info">
-                <i class="fa-solid fa-award"></i>
-              </div>
-              <h5>Earn Job Skills Quickly</h5>
-              <a href="#" class="card-link info">Find Training Programs</a>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-12 col-sm-6 col-lg-2">
-            <div class="feature-card">
-              <div class="icon text-success">
-                <i class="fa-solid fa-file-circle-check"></i>
-              </div>
-              <h5>Quality Jobs, No Degree</h5>
-              <a href="#" class="card-link green">Apply to Jobs</a>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-12 col-sm-6 col-lg-2">
-            <div class="feature-card">
-              <div class="icon text-warning">
-                <i class="fa-solid fa-handshake"></i>
-              </div>
-              <h5>Free Career Coaching</h5>
-              <a href="#" class="card-link yellow">Get Coaching</a>
+          <div class="col-md-4">
+            <div class="team-card shadow-sm">
+              <img
+                src="./imgs/f7.webp"
+                class="team-img"
+              />
+              <h5 class="fw-bold">Mrs. Priya Nair</h5>
+              <p class="role">Operations Head</p>
+              <p class="small">
+                Ensures smooth academic and operational execution.
+              </p>
             </div>
           </div>
         </div>
